@@ -1,0 +1,81 @@
+.destinations {
+    background: url("../img/element.svg") 45% 100% no-repeat, url("../img/element3.svg") 5% 60% no-repeat, url("../img/element2.svg") 60% 3% no-repeat;
+    margin-bottom: 70px;
+}
+
+.destination-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    padding-bottom: 56px
+}
+
+.destinations-title {
+    font-family: Playfair Display, sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+    color: #000000;
+}
+
+.link-view-all {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 60px;
+    color: #FB8F1D;
+    padding-right: 20px;
+}
+
+.link-view-all:after {
+    content: '';
+    background: url('../img/viaw-all.svg') 60% 60% no-repeat;
+    margin-left: 11px;
+    padding-right: 20px;
+}
+
+.destinations-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap
+}
+
+.destinations-source {
+    width: 120px;
+    background-color: #fff;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 0 10px 0 0;
+    padding: 11px 20px 5px 0;
+}
+
+.destinations-city {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 25px;
+    color: #042521;
+    display: block;
+}
+
+.destinations-wrapper {
+    position: relative;
+    width: 261px;
+    height: 337px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.destinations-img {
+    height: 100%;
+}
+
+.destinations-img.china {
+    position: absolute;
+    left: -90px;
+    bottom: 0;
+}

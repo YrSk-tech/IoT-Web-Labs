@@ -1,0 +1,46 @@
+.main {
+    background: url("../img/main-bg.png") 10% 50% no-repeat, url("../img/element.svg") 80% 70% no-repeat, url("../img/element3.svg") 50% 10% no-repeat;
+    margin-bottom: 100px;
+    background-color: #F8F8F8;
+}
+
+.main-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    height: 650px;
+}
+
+.main-description {
+    padding-top: 120px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column
+}
+
+.main-title {
+    font-family: Playfair Display, sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+    color: #000000;
+    margin-right: 27px;
+    margin-bottom: 20px;
+}
+
+.main-description-text {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 30px;
+    color: #7D7987;
+    margin-bottom: 33px;
+}
+
+.main-button {
+    padding: 16px 60px;
+    color: #FFFFFF;
+    font-size: 17px;
+    background: #FB8F1D;
+    border-radius: 8px;
+    margin-right: 279px;
+}
