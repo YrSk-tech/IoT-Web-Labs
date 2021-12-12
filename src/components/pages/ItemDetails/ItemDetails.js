@@ -1,7 +1,10 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState  } from 'react'
 import { Link, useParams } from "react-router-dom";
 import { Button } from '../../Button/Button';
 import { ItemDetailContainer, ItemDetailInfo, Buttons } from "./ItemDetails.styled"
+import { useDispatch } from "react-redux";
+import { getItemById } from '../../ConnectionToBackend/axios.js'
+import { add } from '../../Store/actions/actions'
 
 function ItemDetails(props) {
     useEffect(() => {
@@ -9,7 +12,9 @@ function ItemDetails(props) {
     }, [])
 
     const { id } = useParams();
-    const item = props.list.find(item => (item.id === parseInt(id)));
+    const dispatch = useDispatch();
+    const [item, setItem] = useState([]);
+	 useEffect(() => (async () => { setItem(await getItemById(id))})(), [id])
 
     return (
         <ItemDetailContainer>
@@ -27,7 +32,7 @@ function ItemDetails(props) {
                         Back to Catalog
                     </Button>
                     <Button
-                        path="/cart"
+                        onClick={() => dispatch(add(item))}
                         buttonStyle='btn--inverse'
                         buttonSize='btn--large'
                     >
